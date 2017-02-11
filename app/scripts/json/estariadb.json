@@ -1,4 +1,5 @@
-[
+{
+    "Dungeon": [
         {
             "name": "Temple of Snow",
             "dungeontype": "Temple",
@@ -582,7 +583,9 @@
             "realm": "Swincrest",
             "description": "Temple to the god of Song. These ancient temples were built long ago by the explorers of the Far Weild when they made their towns and villages. Followers of the gods make pilgrimages to these temples throughout the year. The temple of song is the oldest of the temples to be built in The Far Weild.",
             "notes": "When an instrument is played, or a song is sung in the temple, it is amplified as the wind itself beings to harmonize with the music.\r\nIf your party has a bard an song of rest is cast here, treat it as a long rest, and gain 2d10 temporary hit points.\r\n"
-        },
+        }
+    ],
+    "Steading": [
         {
             "name": "Tak'Var Tribe",
             "size": "Tiny",
@@ -908,7 +911,9 @@
             "realm": "Swincrest",
             "description": "There is an abandoned village that is said to come to life at night. The lights in the inn can be seen in the darkness, and bustling sound can be heard inside. Those who approach at night quickly learn to not approach. When those who wish to investigate get too close, an ethereal being forms out of the consistent shroud of mist that floats around the city. The formation is easily recognizable as a dragon. The dragon protects the tiny village relentlessly, and fights off invaders with the threat of death.",
             "buildings": "Abandoned Alchemy Shop - Inside there can be found useless shattered retorts and alembics. Some rotted herbs still sit on one of the shelves.\r\nAbandoned Blacksmith’s Shop - Old rusted swords are resting in the ashes of a once-burning fire.\r\nAbandoned Inn - Inside there are ruined, rotting bar stools and tables. In the back there is a small bed that lies in shambles on the floor. DC 16 reveals a small loose brick in the ground. Underneath the brick is a bone ring is the shape of an elongated rat biting its own tail. \r\nThe wearer gains a bite attack as a primary natural attack. This attack deals 1d6 points of piercing damage. After 1d4 days of wearing the ring, the wearer’s appearance becomes more rat like, even after removing the ring.\r\n"
-        },
+        }
+    ],
+    "Ascendant": [
         {
             "name": "Vine Beist",
             "alignment": "Neutral Evil",
@@ -1099,7 +1104,9 @@
             "hex": "19024",
             "realm": "Swincrest",
             "description": "The Bone Wielder is an ancient being that lies in southern Swincrest. He sits there silently and unmoving. Most that pass nearby are uneasy when around the Bone Wielder, but no reports have been given about the Wielder ever moving. The Wielder is petrified and is waiting to find a vassal to do his bidding in order to unpetrify him."
-        },
+        }
+    ],
+    "NPC": [
         {
             "name": "Mikuna",
             "race": "Skraeling",
@@ -1459,7 +1466,9 @@
             "hex": "27024",
             "realm": "Swincrest",
             "faction": "The Necromancer known to start the most infamous school of necromancy. Rilethil began necromancy in order to help his society by reducing the amount of manual labor, leaving time for living humans to work on other tasks. Unfortunately, he was still young and needed more practice. His binding crystal method ended up failing and his undead minions began to attack innocent people. After dealing with the abominations for the next 3 days, Rilethil was arrested and sentenced to 25 lashes, and banishment."
-        },
+        }
+    ],
+    "Monster": [
         {
             "name": "Furian the White",
             "alignment": "Chaotic Good",
@@ -1949,4 +1958,5 @@
             "realm": "Villmar",
             "description": "In the southeastern forests of Villmar there is a beast that flies above the trees. Brimkar was named by the ancient explorers of the Far Weald. Brim meaning \"To Fly\" and Kar meaning \"The Death of\" translating to \"The Death of the Fliers\". The beast consumes large quantities of migrating birds flying south from the Westerheim Lake during the winter seasons. Brimkar is harmless to humans and flies high enough in the sky to be unreachable by arrows and projectiles."
         }
-]
+    ]
+}

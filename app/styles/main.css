@@ -81,3 +81,11 @@ body {
     border-bottom: 0;
   }
 }
+
+.jsonScrollBox {
+  height:500px;
+  width:50%;
+  border:1px solid #ccc;
+  font:16px/26px Georgia, Garamond, Serif;
+  overflow:auto;
+}

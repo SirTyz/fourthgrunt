@@ -1,12 +1,66 @@
-<div ng-app="myApp">
-  <div ng-controller="databaseSearchCtrl as result">
+<div ng-app="fourthgruntApp">
+  <div ng-controller="DatabaseCtrl as result">
     <input type="text" ng-model="searchString">
-  </div>
-  <ul ng-if="searchString" ng-repeat="i in result.jsonData.hex | filter:searchString">
-    <li>
-      <b>{{i.name}}</b> <br><br>
-      Realm: {{i.realm}} <br>
-      Description: {{i.description}} <br>
-    </li>
+    <h3>Dungeons:</h3>
+    <div class="jsonScrollBox">
+      <ul ng-repeat="i in result.json.Dungeon | filter:searchString">
+        <li>
+          <b>{{i.name}}</b>
+          <br> Realm: {{i.realm}}
+          <br> <i>{{i.hex}}</i>
+          <br>{{i.description}}
+          <br>
+        </li>
+      </ul>
+    </div>
+    <h3>Steadings:</h3>
+    <div class="jsonScrollBox">
+      <ul ng-repeat="i in result.json.Steading | filter:searchString">
+        <li>
+          <b>{{i.name}}</b>
+          <br> Realm: {{i.realm}}
+          <br> <i>{{i.hex}}</i>
+          <br> {{i.description}}
+          <br>
+        </li>
+      </ul>
+    </div>
+    <h3>Ascendants:</h3>
+    <div class="jsonScrollBox">
+      <ul ng-repeat="i in result.json.Ascendant | filter:searchString">
+        <li>
+          <b>{{i.name}}</b>
+          <br> Realm: {{i.realm}}
+          <br> <i>{{i.hex}}</i>
+          <br> {{i.description}}
+          <br>
+        </li>
+      </ul>
+    </div>
+    <h3>NPCs:</h3>
+    <div class="jsonScrollBox">
+      <ul ng-repeat="i in result.json.NPC | filter:searchString">
+        <li>
+          <b>{{i.name}}</b>
+          <br> Realm: {{i.realm}}
+          <br> <i>{{i.hex}}</i>
+          <br> {{i.description}}
+          <br>
+        </li>
+      </ul>
+    </div>
+    <h3>Monsters:</h3>
+    <div class="jsonScrollBox">
+      <ul ng-repeat="i in result.json.Monster | filter:searchString">
+        <li>
+          <b>{{i.name}}</b>
+          <br> Realm: {{i.realm}}
+          <br> <i>{{i.hex}}</i>
+          <br>{{i.description}}
+          <br>
+        </li>
+      </ul>
+    </div>
   </ul>
+  </div>
 </div>
