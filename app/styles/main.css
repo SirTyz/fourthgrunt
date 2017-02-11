@@ -81,11 +81,28 @@ body {
     border-bottom: 0;
   }
 }
-
+/*Styles for the Database search page */
 .jsonScrollBox {
-  height:500px;
   width:50%;
-  border:1px solid #ccc;
-  font:16px/26px Georgia, Garamond, Serif;
-  overflow:auto;
+  max-height:500px;
+  font:12px Georgia, Garamond, Serif;
+  float: left;
+  overflow: auto;
+  margin-bottom: 25px;
+}
+
+.jsonScrollBox b {
+
+}
+
+.dbSearchBar {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.dbSearchBar input {
+  width: 100%;
+  height: 50px;
+  font-size: 35px;
+  border-radius: 3px;
 }
