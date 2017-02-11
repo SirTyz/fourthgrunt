@@ -64,6 +64,16 @@ angular
         controller: 'ReligionGeneratorCtrl',
         controllerAs: 'religionGenerator'
       })
+      .when('/inn-generator', {
+        templateUrl: 'views/inn-generator.html',
+        controller: 'InnGeneratorCtrl',
+        controllerAs: 'innGenerator'
+      })
+      .when('/game-generator', {
+        templateUrl: 'views/game-generator.html',
+        controller: 'GameGeneratorCtrl',
+        controllerAs: 'gameGenerator'
+      })
       .otherwise({
         redirectTo: '/'
       });
