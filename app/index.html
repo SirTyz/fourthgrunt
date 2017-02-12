@@ -14,7 +14,10 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+    <!--font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--endbuild-->
+
   </head>
   <body ng-app="fourthgruntApp">
     <!--[if lte IE 8]>
@@ -38,13 +41,14 @@
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#!/about">About</a></li>
-              <li><a ng-href="#!/generators">Generators</a></li>
-              <li><a ng-href="#!/database">Database</a></li>
-            </ul>
+            <div class="collapse navbar-collapse" id="js-navbar-collapse" ng-controller="HeaderCtrl">
+              <ul class="nav navbar-nav">
+                <li ng-class="{active: isActive('/')}"><a href="#!/">Home</a></li>
+                <li ng-class="{active: isActive('/about')}"><a ng-href="#!/about">About</a></li>
+                <li ng-class="{active: isActive('/generators')}"><a ng-href="#!/generators">Generators</a></li>
+                <li ng-class="{active: isActive('/database')}"><a ng-href="#!/database">Database</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -56,7 +60,13 @@
 
     <div class="footer">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <div class="iconFooter">
+          <p class="fa fa-github-square" />
+          <p class="fa fa-google-plus-square" />
+          <p class="fa fa-reddit-square" />
+          <p class="fa fa-youtube-square" />
+          <p class="fa fa-twitch" />
+      </div>
       </div>
     </div>
 
