@@ -3,7 +3,9 @@
     <div class="dbSearchBar">
       <input type="text" ng-model="searchString">
     </div>
-
+<div class="accordionWrapper">
+  <button class="accordion"><h4>Dungeons</h4></button>
+  <div class="panel">
     <div class="jsonScrollBox" id="scrollBox1">
       <ul ng-repeat="i in result.json.Dungeon | filter:searchString">
         <li>
@@ -15,7 +17,11 @@
         </li>
       </ul>
     </div>
-    <div class="jsonScrollBoxTitle">      
+  </div>
+
+  <button class="accordion"><h4>Steadings</h4></button>
+  <div class="panel">
+    <div class="jsonScrollBoxTitle">
     <div class="jsonScrollBox" id="scrollBox2">
       <ul ng-repeat="i in result.json.Steading | filter:searchString">
         <li>
@@ -27,6 +33,11 @@
         </li>
       </ul>
     </div>
+  </div>
+</div>
+
+  <button class="accordion"><h4>Ascendants</h4></button>
+  <div class="panel">
     <div class="jsonScrollBox" id="scrollBox3">
       <ul ng-repeat="i in result.json.Ascendant | filter:searchString">
         <li>
@@ -38,6 +49,10 @@
         </li>
       </ul>
     </div>
+  </div>
+
+  <button class="accordion"><h4>NPCs</h4></button>
+  <div class="panel">
     <div class="jsonScrollBox" id="scrollBox4">
       <ul ng-repeat="i in result.json.NPC | filter:searchString">
         <li>
@@ -49,6 +64,10 @@
         </li>
       </ul>
     </div>
+  </div>
+
+  <button class="accordion"><h4>Monsters</h4></button>
+  <div class="panel">
     <div class="jsonScrollBox" id="scrollBox5">
       <ul ng-repeat="i in result.json.Monster | filter:searchString">
         <li>
@@ -61,5 +80,9 @@
       </ul>
     </div>
   </ul>
-  </div>
+</div>
+</div>
+
+
+</div>
 </div>

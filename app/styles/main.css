@@ -142,7 +142,7 @@ body {
 }
 /*Styles for the Database search page */
 .jsonScrollBox {
-  width:50%;
+  width:100%;
   max-height:500px;
   font:12px Georgia, Garamond, Serif;
   float: left;
@@ -166,12 +166,43 @@ body {
   border-radius: 3px;
 }
 
-.iconFooter p{
+.iconFooter i{
   padding: 5px;
   color: black;
   font-size: 35px;
 }
 
-.iconFooter p:hover{
+.iconFooter i:hover{
   color: #cc3300;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 5px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #cc3300;
+    color: white;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
+.accordionWrapper {
+  margin-bottom: 25px;
 }

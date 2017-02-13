@@ -9,7 +9,24 @@
  */
 angular.module('fourthgruntApp')
   .controller('DatabaseCtrl', function () {
+    var acc = document.getElementsByClassName("accordion");
+    var i;
 
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        }
+    }
     this.json = {
         "Dungeon": [
             {
@@ -1432,7 +1449,7 @@ angular.module('fourthgruntApp')
                 "alignment": "Chaotic Neutral",
                 "hex": "04022",
                 "realm": "Alenfel Barrows",
-                "faction": "A young woman who is known for her wild and destructive transformation into a bear. She made a deal with a witch that ended badly, causing her to be exiled from her home town. Since her exile, she has become and excellent apothecary. Many still stay clear from her home due to her unpredictable and violent transformations."
+                "description": "A young woman who is known for her wild and destructive transformation into a bear. She made a deal with a witch that ended badly, causing her to be exiled from her home town. Since her exile, she has become and excellent apothecary. Many still stay clear from her home due to her unpredictable and violent transformations."
             },
             {
                 "name": "Gunter the Man",
@@ -1441,7 +1458,7 @@ angular.module('fourthgruntApp')
                 "alignment": "Chaotic Neutral",
                 "hex": "14022",
                 "realm": "Alenfel Barrows",
-                "faction": "He is hated for his appearance, yet he retains a paragon of honor, virtue and piety. Through great pain he has removed his horns, over years cut away his tail. A man wounded in mind, some pity him above all others. Leads a cult of non-humans called ‘Brothers of Supremacy’ that mutilate themselves in order to ‘become human’.\r\n"
+                "description": "He is hated for his appearance, yet he retains a paragon of honor, virtue and piety. Through great pain he has removed his horns, over years cut away his tail. A man wounded in mind, some pity him above all others. Leads a cult of non-humans called ‘Brothers of Supremacy’ that mutilate themselves in order to ‘become human’.\r\n"
             },
             {
                 "name": "Palmyre",
@@ -1450,7 +1467,7 @@ angular.module('fourthgruntApp')
                 "alignment": "Lawful Good",
                 "hex": "01023",
                 "realm": "Alenfel Barrows",
-                "faction": "A martial elven \"Repo-Woman\" who follows her contracts very strongly, and cannot be easily convinced to do otherwise."
+                "description": "A martial elven \"Repo-Woman\" who follows her contracts very strongly, and cannot be easily convinced to do otherwise."
             },
             {
                 "name": "Teetonka",
@@ -1459,7 +1476,7 @@ angular.module('fourthgruntApp')
                 "alignment": "Chaotic Evil",
                 "hex": "22024",
                 "realm": "Swincrest",
-                "faction": "Teetonka is a barbarian of southern Swincrest. She is known for ambushing adventurers and leaving them all on the ground in a pool of their own blood. She is fueled completely off rage and instinct and is not known to speak any discernable language. Many people suspect that she is a member of the Mohe tribe, but was too violent for even them, so she was exiled"
+                "description": "Teetonka is a barbarian of southern Swincrest. She is known for ambushing adventurers and leaving them all on the ground in a pool of their own blood. She is fueled completely off rage and instinct and is not known to speak any discernable language. Many people suspect that she is a member of the Mohe tribe, but was too violent for even them, so she was exiled"
             },
             {
                 "name": "Margot of Therin",
@@ -1468,7 +1485,7 @@ angular.module('fourthgruntApp')
                 "alignment": "Neutral Good",
                 "hex": "11025",
                 "realm": "Alenfel Barrows",
-                "faction": "A greenhorn elven historian that has just recently arrived to The Far Weald. She seeks to capture as much information on the ruins, treasures, and people as she can find and frequently tags along with adventurers groups in order to travel with more safety."
+                "description": "A greenhorn elven historian that has just recently arrived to The Far Weald. She seeks to capture as much information on the ruins, treasures, and people as she can find and frequently tags along with adventurers groups in order to travel with more safety."
             },
             {
                 "name": "Reilthil",
@@ -1477,7 +1494,7 @@ angular.module('fourthgruntApp')
                 "alignment": "Chaotic Evil",
                 "hex": "27024",
                 "realm": "Swincrest",
-                "faction": "The Necromancer known to start the most infamous school of necromancy. Rilethil began necromancy in order to help his society by reducing the amount of manual labor, leaving time for living humans to work on other tasks. Unfortunately, he was still young and needed more practice. His binding crystal method ended up failing and his undead minions began to attack innocent people. After dealing with the abominations for the next 3 days, Rilethil was arrested and sentenced to 25 lashes, and banishment."
+                "description": "The Necromancer known to start the most infamous school of necromancy. Rilethil began necromancy in order to help his society by reducing the amount of manual labor, leaving time for living humans to work on other tasks. Unfortunately, he was still young and needed more practice. His binding crystal method ended up failing and his undead minions began to attack innocent people. After dealing with the abominations for the next 3 days, Rilethil was arrested and sentenced to 25 lashes, and banishment."
             }
         ],
         "Monster": [
