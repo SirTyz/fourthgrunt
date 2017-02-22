@@ -74,6 +74,11 @@ angular
         controller: 'GameGeneratorCtrl',
         controllerAs: 'gameGenerator'
       })
+      .when('/map', {
+        templateUrl: 'views/map.html',
+        controller: 'MapCtrl',
+        controllerAs: 'map'
+      })
       .otherwise({
         redirectTo: '/'
       });
