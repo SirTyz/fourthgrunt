@@ -79,6 +79,11 @@ angular
         controller: 'MapCtrl',
         controllerAs: 'map'
       })
+      .when('/blog-navigation', {
+        templateUrl: 'views/blog-navigation.html',
+        controller: 'BlogNavigationCtrl',
+        controllerAs: 'blogNavigation'
+      })
       .otherwise({
         redirectTo: '/'
       });

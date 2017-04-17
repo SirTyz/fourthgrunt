@@ -298,3 +298,11 @@ div.panel {
         height: 100%;
     }
 }
+
+.blog-posts-list{
+
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+
+}
